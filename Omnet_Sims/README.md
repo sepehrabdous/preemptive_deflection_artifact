@@ -103,4 +103,6 @@ After the distribution files are downloaded, you can use the provided bash scrip
   * run_fattree.sh (uses ```omnetpp_fattree.ini```)
 * **Preemptive Deflection parameter analysis**
   * run_50_bg_param_study.sh (uses ```omnetpp_50_bg_param_study.ini```)
+* **Preemptive Deflection under various queue occupancy update frequencies**
+  * run_50_bg_update_freq.sh (uses ```omnetpp_50_bg_dupdate_freq.ini```)
 
