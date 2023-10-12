@@ -1,14 +1,12 @@
 # Omnet++ simulation files
 
-## Re-producing the simulation results
-
 This repository provides the instructions and files required to run the simulations and extract the results.We use [Omnet++ simulator](https://omnetpp.org/) and INET framework to run the simulations. [Omnet++ manual](https://doc.omnetpp.org/omnetpp/manual/) and its examples are good references for introduction to the simulator. We ran our simulations on Ubuntu machines (version: 18.04) so all the commands are for Ubuntu.To run the simulations, you should follow the following steps:
 
 * Step 1: Install dependencies
 * Step 2: Install Omnet++
 * Step 3: Clone the repository
 * Step 4: Build the project
-* Step 5: Run the simulations and extract the results
+* Step 5: Run the simulations
 
 ### Step 1: Installing dependencies
 
@@ -78,7 +76,7 @@ cd preemptive_deflection_artifact/Omnet_Sims/
 ./build.sh
 ```
 
-### Step 5: Running the simulations and extracting the results
+### Step 5: Running the simulations
 
 The config files for large scale simulations can be used for evaluating Simple Deflection, quantile-based Preemptive Deflection, distribution-based Preemptive Deflection, Vertigo, DIBS, ECMP, and AIFO while using TCP, DCTCP, Swift, and Bolt as the transport protocol. Every scenario with these configurations takes a few days to complete. To run the large scale simulations, first make sure that you are in the right directory ("preemptive_deflection_artifact/Omnet_Sims/dc_simulations/simulations/sims") and then run the following command to download the distribution files:
 
