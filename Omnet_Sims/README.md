@@ -87,8 +87,7 @@ bash download_dist_files.sh
 ```
 
 After the distribution files are downloaded, you can use the provided bash scripts to run the large scale simulations for different incast arrival rates (dqps), flow sizes, and scales. Additionally, you can run the simulations for various degrees of burstiness, fat-tree topology, and component analysis. The list of the provided bash scripts is as below:
-* **Different arrival rates with 15%, 25%, 50%, and 75% background load**
-  * run_15_bg_dqps.sh (uses ```omnetpp_15_bg_dqps.ini```)
+* **Different arrival rates with 25%, 50%, and 75% background load and 10/40 Gbps links**
   * run_25_bg_dqps.sh (uses ```omnetpp_25_bg_dqps.ini```)
   * run_50_bg_dqps.sh (uses ```omnetpp_50_bg_dqps.ini```)
   * run_75_bg_dqps.sh (uses ```omnetpp_75_bg_dqps.ini```)
@@ -96,12 +95,16 @@ After the distribution files are downloaded, you can use the provided bash scrip
   * run_50_bg_dscale.sh (uses ```omnetpp_50_bg_dscale.ini```)
 * **Different flow size with 50% background load**
   * run_50_bg_dfsize.sh (uses ```omnetpp_50_bg_dfsize.ini```)
-* **Different degrees of burstiness with 80% constant load**
-  * run_80_constant_dburstiness.sh (uses ```omnetpp_80_constant_dburstiness.ini```)
-* **Fat-tree topology under different arrival rates and 50% background load**
+* **Different arrival rates with 25%, 50%, and 75% background load and 100 Gbps links**
+  * run_25_bg_dqps_100gbps.sh (uses ```omnetpp_25_bg_dqps_100gbps.ini```)
+  * run_50_bg_dqps_100gbps.sh (uses ```omnetpp_50_bg_dqps_100gbps.ini```)
+  * run_75_bg_dqps_100gbps.sh (uses ```omnetpp_75_bg_dqps_100gbps.ini```)
+* **Fat-tree topology under different incast query arrival rates and 50% background load**
   * run_fattree.sh (uses ```omnetpp_fattree.ini```)
-* **Component analysis: effect of boosting factor in Vertigo's performance (boosting factor = 0, 2, 4, 8)**
-  * run_boosting.sh (uses ```boosting.ini```)
-* **Component analysis: effect of SRPT scheduling, packet deflection, and ordering component in Vertigo's performance**
-  * run_deflection_and_ordering.sh (uses ```deflection_and_ordering.ini```)
+* **Preemptive Deflection parameter analysis**
+  * run_50_bg_param_study.sh (uses ```omnetpp_50_bg_param_study.ini```)
+* **Preemptive Deflection under various queue occupancy update frequencies**
+  * run_50_bg_update_freq.sh (uses ```omnetpp_50_bg_dupdate_freq.ini```)
+* **Probabilistic Preemptive Deflection**
+  * run_50_bg_dqps_probpd.sh (uses ```omnetpp_50_bg_dqps.ini```)
 
