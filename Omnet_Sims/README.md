@@ -99,10 +99,12 @@ After the distribution files are downloaded, you can use the provided bash scrip
   * run_25_bg_dqps_100gbps.sh (uses ```omnetpp_25_bg_dqps_100gbps.ini```)
   * run_50_bg_dqps_100gbps.sh (uses ```omnetpp_50_bg_dqps_100gbps.ini```)
   * run_75_bg_dqps_100gbps.sh (uses ```omnetpp_75_bg_dqps_100gbps.ini```)
-* **Fat-tree topology under different arrival rates and 50% background load**
+* **Fat-tree topology under different incast query arrival rates and 50% background load**
   * run_fattree.sh (uses ```omnetpp_fattree.ini```)
 * **Preemptive Deflection parameter analysis**
   * run_50_bg_param_study.sh (uses ```omnetpp_50_bg_param_study.ini```)
 * **Preemptive Deflection under various queue occupancy update frequencies**
   * run_50_bg_update_freq.sh (uses ```omnetpp_50_bg_dupdate_freq.ini```)
+* **Probabilistic Preemptive Deflection**
+  * run_50_bg_dqps_probpd.sh (uses ```omnetpp_50_bg_dqps.ini```)
 
